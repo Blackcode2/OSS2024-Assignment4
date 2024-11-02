@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "category": "Food",
+      "product": "carrot",
+      "price": 3,
+      "quantity": 33,
+      "id": "3ea7"
+    },
+    {
+      "id": "538a",
+      "category": "Cloth",
+      "product": "red T",
+      "price": 2.5,
+      "quantity": 50
+    },
+    {
+      "id": "f043",
+      "category": "Book",
+      "product": "To You",
+      "price": 10,
+      "quantity": 5
+    },
+    {
+      "id": "fb36",
+      "category": "Electronics",
+      "product": "iPad air 11",
+      "price": 1000,
+      "quantity": 15
+    },
+    {
+      "id": "28b8",
+      "category": "Electronics",
+      "product": "iPhone 16",
+      "price": 1200,
+      "quantity": 34
+    },
+    {
+      "id": "10b8",
+      "category": "Food",
+      "product": "Apple",
+      "price": 2,
+      "quantity": 60
+    },
+    {
+      "id": "f361",
+      "category": "Food",
+      "product": "pork",
+      "price": 5,
+      "quantity": 30
+    },
+    {
+      "id": "78f7",
+      "category": "Cloth",
+      "product": "new jeans",
+      "price": 20,
+      "quantity": 44
+    },
+    {
+      "id": "5bc9",
+      "category": "Cloth",
+      "product": "new shirts",
+      "price": 20.5,
+      "quantity": 30
+    },
+    {
+      "id": "567f",
+      "category": "Electronics",
+      "product": "Galaxy FE",
+      "price": 1000,
+      "quantity": 33
+    }
+  ]
+}
