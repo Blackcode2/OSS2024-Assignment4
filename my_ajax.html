@@ -107,6 +107,7 @@
     </div>
 
     <script>
+      const url = "https://672887f6270bd0b97555fbea.mockapi.io/proudct";
       window.onload = function () {
         loadProducts();
         document.getElementById("add").addEventListener("click", function () {
@@ -154,7 +155,7 @@
 
       function loadProducts() {
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "http://localhost:3001/products");
+        xhr.open("GET", url);
         xhr.setRequestHeader("content-type", "application/json");
         xhr.send();
 
@@ -207,7 +208,7 @@
 
         const newProduct = { category, product, price, quantity };
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:3001/products");
+        xhr.open("POST", url);
         xhr.setRequestHeader("content-type", "application/json; charset=UTF-8");
         xhr.send(JSON.stringify(newProduct));
 
@@ -223,7 +224,7 @@
 
       function editProduct(id) {
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", `http://localhost:3001/products/${id}`);
+        xhr.open("GET", `${url}/${id}`);
         xhr.setRequestHeader("content-type", "application/json");
         xhr.send();
 
@@ -261,7 +262,7 @@
         const updatedProduct = { category, product, price, quantity };
 
         const xhr = new XMLHttpRequest();
-        xhr.open("PUT", `http://localhost:3001/products/${id}`);
+        xhr.open("PUT", `${url}/${id}`);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(JSON.stringify(updatedProduct));
 
@@ -277,7 +278,7 @@
 
       function deleteProduct(id) {
         const xhr = new XMLHttpRequest();
-        xhr.open("DELETE", "http://localhost:3001/products/" + id);
+        xhr.open("DELETE", `${url}/${id}`);
         xhr.send();
 
         console.log(id);
